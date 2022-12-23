@@ -1,8 +1,8 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Button from "../src/components/Button";
 import Input from "../src/components/Input";
-import Separator from "../src/components/Separator";
 import styles from "../styles/SignUp.module.scss";
 
 const SingUp = () => {
@@ -13,6 +13,12 @@ const SingUp = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [eye, setEye] = useState(false);
+
+  const router = useRouter()
+
+  const handleLogin = () => {
+    router.push('/login')
+  }
 
   return (
     <div className={styles.container}>
@@ -68,7 +74,7 @@ const SingUp = () => {
           />
         </div>
         <div style={{ margin: "18px 0 18px 0", width: "100%" }}>
-          <Button text="Register now!" type="primary" />
+          <Button text="Register now!" type="primary" onClick={handleLogin} />
         </div>
 
         <div className={styles.login}>
