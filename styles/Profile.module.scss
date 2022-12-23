@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 18px 15px;
+
+  .profileContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #273539;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border-radius: 8px;
+
+    .personalInfo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .imgProfile {
+        height: 120px;
+        width: 120px;
+        margin-bottom: 8px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 12px;
+      }
+      h4 {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 14px;
+        color: #12cce4;
+
+        margin-bottom: 24px;
+      }
+      h5 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        color: #5d818d;
+        margin-bottom: 4px;
+      }
+    }
+
+    .dataContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 24px;
+
+      .infoContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .socialMedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        img{
+            margin: 0 10px;
+        }
+    }
+
+    .buttonContainer{
+      margin-bottom: 16px;
+      width: 100%;
+    }
+  }
+}

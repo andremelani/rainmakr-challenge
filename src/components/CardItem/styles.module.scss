@@ -1,0 +1,116 @@
+.container {
+  background-color: #273539;
+  padding: 20px 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .brand {
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: #5d818d;
+    }
+  }
+
+  .subtitle {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 16px;
+      color: #ffffff;
+    }
+    span {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 16px;
+      color: #12cce4;
+    }
+  }
+  .start {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+
+    span {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    h4 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+  .delivery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    span {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    h4 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+  .segment {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff6b00;
+    margin-bottom: 4px;
+  }
+
+  .platform {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    span {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #5d818d;
+        margin-bottom: 4px;
+    }
+
+    .platforms {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 8px;
+      width: 100%;
+      img{
+        width: 16px;
+        
+      }
+    }
+  }
+  .buttonContainer {
+    width: 40%;
+  }
+}

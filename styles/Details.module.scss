@@ -1,0 +1,193 @@
+.container {
+  padding: 15px 20px;
+
+  .back {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #273539;
+    margin-bottom: 5px;
+  }
+
+  .infoContainer {
+    background-color: #273539;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+
+    .brand {
+      display: flex;
+      .brandName {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+        span {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          color: #5d818d;
+        }
+
+        h5 {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 16px;
+          color: #ffffff;
+        }
+      }
+    }
+    h3 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 12px;
+      color: #12cce4;
+      margin-bottom: 4px;
+    }
+
+    .brandInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      margin-bottom: 8px;
+
+      span {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #ffffff;
+        margin-bottom: 4px;
+      }
+    }
+
+    .platformContainer {
+      display: grid;
+      gap: 8px;
+
+      img {
+        width: 16px;
+      }
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: justify;
+      letter-spacing: -0.2px;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .data {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .buttonContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .backButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        max-height: 42px;
+        border-radius: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+        padding: 9px 12px;
+        color: #ffffff;
+        background-color: #42585f;
+      }
+
+      .get {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        max-height: 42px;
+        border-radius: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+        padding: 9px 12px;
+        color: #0e181a;
+        background-color: #20def6;
+      }
+    }
+  }
+
+  .modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      letter-spacing: -0.5px;
+      background: linear-gradient(90deg, #ff6b00 0%, #ed1e79 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: -0.2px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+    .backButtonModal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+      padding: 9px 12px;
+      color: #273539;
+      background-color: #20def6;
+      margin-bottom: 15px;
+    }
+
+    .backJob {
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      color: #12cce4;
+      background-color: transparent;
+    }
+  }
+}

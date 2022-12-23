@@ -1,0 +1,67 @@
+.menu {
+  z-index: 3;
+  background-color: #273539;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 26px;
+  position: fixed;
+  width: 100%;
+  margin-top: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  animation: showMenu 0.3s;
+
+  @keyframes showMenu {
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      height: auto;
+    }
+  }
+
+  .login {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff6b00;
+  }
+  .signUp {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #12cce4;
+  }
+
+  .menuItem {
+    display: flex;
+    align-items: center;
+
+    .iconContainer {
+      height: 32px;
+      width: 32px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .profile {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .menuName {
+      color: #12cce4;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+}
