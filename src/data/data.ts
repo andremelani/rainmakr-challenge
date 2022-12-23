@@ -29,6 +29,11 @@ export const menuLogged = [
       page: "SEARCH",
       url: '/login'
     },
+    {
+      img: "/icons/out.svg",
+      page: "LOGOUT",
+      url: '/login'
+    },
   ];
 
 export const profile = [

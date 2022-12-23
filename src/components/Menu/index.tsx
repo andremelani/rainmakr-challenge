@@ -66,7 +66,7 @@ const Menu = ({ onClick }: MenuInterface) => {
                         {item.page}
                       </Link>
                     </div>
-                    {item.page === "SEARCH" ? null : <Separator type="light" />}
+                    {item.page === "LOGOUT" ? null : <Separator type="light" />}
                   </>
                 )}
               </>

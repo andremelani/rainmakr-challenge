@@ -47,10 +47,17 @@ const Details = () => {
           <>
             <div key={item.id} className={styles.infoContainer}>
               <div className={styles.brand}>
-                <img src="/images/logoBrand.png" alt="" />
-                <div className={styles.brandName}>
-                  <span>{item.brand}</span>
-                  <h5>{item.subtitle}</h5>
+                <div className={styles.brandContainer}>
+                  <img src="/images/logoBrand.png" alt="" />
+                  <div className={styles.brandName}>
+                    <span>{item.brand}</span>
+                    <h5>{item.subtitle}</h5>
+                  </div>
+                </div>
+
+                <div className={styles.box}>
+                  <span>FIT</span>
+                  <h4>{item.fit}%</h4>
                 </div>
               </div>
               <Separator type="dark" />
@@ -145,8 +152,15 @@ const Details = () => {
           <div className={styles.modalContainer}>
             <h2>GOOD LUCK</h2>
             <p>Continue searching the perfect RainJobs for you.</p>
-            <button className={styles.backButtonModal} onClick={handleGoBack}>Back to Rainjobs</button>
-            <button className={styles.backJob} onClick={() => setOpenModal(false)}>Back to the actual job</button>
+            <button className={styles.backButtonModal} onClick={handleGoBack}>
+              Back to Rainjobs
+            </button>
+            <button
+              className={styles.backJob}
+              onClick={() => setOpenModal(false)}
+            >
+              Back to the actual job
+            </button>
           </div>
         </Modal>
       ) : null}
